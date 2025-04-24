@@ -35,11 +35,10 @@ export default function ExperienceCard({
             : "Senior Frontend Engineer, Accessibility"}{" "}
           · {company ? company : "Klaviyo"}
         </p>
-        <p
+        <div
           className={`${colors.secondary} group-hover:${colors.primary} text-sm`}
-        >
-          <div dangerouslySetInnerHTML={{ __html: workSummary }} />
-        </p>
+          dangerouslySetInnerHTML={{ __html: workSummary }}
+        />
 
         <div className="flex flex-wrap gap-2">
           {technologies.map((tech) => (

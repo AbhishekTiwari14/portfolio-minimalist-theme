@@ -79,15 +79,15 @@ export default function MinimalistTheme() {
   const colors = colorPalette[palette]
   return (
     <div
-      className={`min-h-screen w-full flex flex-col px-8 lg:grid lg:grid-cols-2 ${colors.bg}`}
+      className={`min-h-screen w-full flex flex-col px-8 lg:grid lg:grid-cols-2 ${colors?.bg}`}
     >
       <div
-        className={`flex flex-col ${colors.primary}  lg:sticky lg:top-0 lg:justify-between lg:h-screen lg:max-w-3/5 lg:px-2 pt-20`}
+        className={`flex flex-col ${colors?.primary}  lg:sticky lg:top-0 lg:justify-between lg:h-screen lg:max-w-3/5 lg:px-2 pt-20`}
       >
         <div className="flex flex-col gap-2">
           <p className="font-bold text-4xl">{fullName}</p>
           <p className="font-semibold text-xl">{title}</p>
-          <p className={`font-medium text-md py-2  ${colors.secondary}`}>
+          <p className={`font-medium text-md py-2  ${colors?.secondary}`}>
             {description}
           </p>
         </div>
@@ -97,7 +97,7 @@ export default function MinimalistTheme() {
             href="#about"
           >
             <span
-              className={`nav-indicator mr-4 h-px w-8 ${colors.navBg} transition-all group-hover:w-16 ${colors.accent} group-focus-visible:w-16 motion-reduce:transition-none active:text-white`}
+              className={`nav-indicator mr-4 h-px w-8 ${colors?.navBg} transition-all group-hover:w-16 ${colors?.accent} group-focus-visible:w-16 motion-reduce:transition-none active:text-white`}
             ></span>
             <span className="nav-text text-xs font-bold uppercase tracking-widest active:text-white">
               ABOUT
@@ -109,7 +109,7 @@ export default function MinimalistTheme() {
             href="#experience"
           >
             <span
-              className={`nav-indicator mr-4 h-px w-8 ${colors.navBg} transition-all group-hover:w-16 ${colors.accent} group-focus-visible:w-16 motion-reduce:transition-none active:text-white`}
+              className={`nav-indicator mr-4 h-px w-8 ${colors?.navBg} transition-all group-hover:w-16 ${colors?.accent} group-focus-visible:w-16 motion-reduce:transition-none active:text-white`}
             ></span>
             <span className="nav-text text-xs font-bold uppercase tracking-widest active:text-white">
               EXPERIENCE
@@ -120,7 +120,7 @@ export default function MinimalistTheme() {
             href="#projects"
           >
             <span
-              className={`nav-indicator mr-4 h-px w-8 ${colors.navBg} transition-all group-hover:w-16 ${colors.accent} group-focus-visible:w-16 motion-reduce:transition-none active:text-white`}
+              className={`nav-indicator mr-4 h-px w-8 ${colors?.navBg} transition-all group-hover:w-16 ${colors?.accent} group-focus-visible:w-16 motion-reduce:transition-none active:text-white`}
             ></span>
             <span className="nav-text text-xs font-bold uppercase tracking-widest active:text-white">
               PROJECTS
@@ -186,7 +186,7 @@ export default function MinimalistTheme() {
             ABOUT
           </p>
           <div
-            className={`${colors.secondary} text-justify lg:text-xl lg:font-semibold lg:tracking-wider lg:leading-relaxed lg:pr-6`}
+            className={`${colors?.secondary} text-justify lg:text-xl lg:font-semibold lg:tracking-wider lg:leading-relaxed lg:pr-6`}
             dangerouslySetInnerHTML={{ __html: about }}
           />
         </div>

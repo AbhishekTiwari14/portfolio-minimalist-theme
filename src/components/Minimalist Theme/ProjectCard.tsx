@@ -21,7 +21,7 @@ export default function ProjectCard({
   const colors = colorPalette[palette]
   return (
     <div
-      className={`bg-slate-900 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:translate-y-[-5px] border-t-4 ${colors.bdr} my-5`}
+      className={`bg-slate-900 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:translate-y-[-5px] border-t-4 ${colors?.bdr} my-5`}
     >
       <div className="p-6">
         <h3 className="text-xl font-bold mb-2 text-white">
@@ -44,7 +44,7 @@ export default function ProjectCard({
             {technologies.map((tech, index) => (
               <span
                 key={index}
-                className={`flex items-center rounded-full ${colors.btn} px-3 py-1 text-xs font-medium leading-5`}
+                className={`flex items-center rounded-full ${colors?.btn} px-3 py-1 text-xs font-medium leading-5`}
               >
                 {tech}
               </span>

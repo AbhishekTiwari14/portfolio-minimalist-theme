@@ -59,7 +59,7 @@ export default function MinimalistTheme() {
   useEffect(() => {
     fetch("./data.json")
       .then((response) => response.json())
-      .then((data) => setData(data.fullName))
+      .then((data) => setData(data))
       .catch((error) => {
         console.error("Couldn't load data.json, using fallback data", error)
       })
